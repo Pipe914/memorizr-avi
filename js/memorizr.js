@@ -1,6 +1,34 @@
 $(function () {
 
-    var imgUrls = ["img/deer.png", "img/dolphin.png", "img/kangaroo.png", "img/leopard.png", "img/panther.png", "img/penguin.png", "img/rabbit.png", "img/sheep.png", "img/swan.png", "img/wolf.png", "img/zebra.png", "img/duck.png", "img/deer.png", "img/dolphin.png", "img/kangaroo.png", "img/leopard.png", "img/panther.png", "img/penguin.png", "img/rabbit.png", "img/sheep.png", "img/swan.png", "img/wolf.png", "img/zebra.png", "img/duck.png"];
+
+    var prices = {
+        "1": {
+            "name": "Gorra",
+            "clicks": "5"
+        },
+        "2": {
+            "name": "Libreta",
+            "clicks": "10"
+        },
+        "3": {
+            "name": "Cartuchera",
+            "clicks": "15"
+        },
+        "4": {
+            "name": "Pelota",
+            "clicks": "20"
+        },
+        "5": {
+            "name": "Esfero",
+            "clicks": "25"
+        },
+        "6": {
+            "name": "Resaltador",
+            "clicks": "60"
+        }
+    };
+
+    var imgUrls = ["img/uno.png", "img/dos.png", "img/tres.png", "img/cuatro.png", "img/cinco.png", "img/seis.png", "img/siete.png", "img/ocho.png", "img/nueve.png", "img/diez.png", "img/once.png", "img/doce.png", "img/uno.png", "img/dos.png", "img/tres.png", "img/cuatro.png", "img/cinco.png", "img/seis.png", "img/siete.png", "img/ocho.png", "img/nueve.png", "img/diez.png", "img/once.png", "img/doce.png"];
 
     var imgUrlsArr = imgUrls;
     imgUrlsArr = shuffleArray(imgUrlsArr);
@@ -31,8 +59,16 @@ $(function () {
     function gameOver() {
         if ($(".matched").length === 48) {
 
+            for (var key in prices) {
+                if (prices[key].clicks >= total_clicks) {
+                    var prize = prices[key].name;
+                    break;
+
+                }
+            }
+
             setTimeout(function () {
-                alert("Congrats. You have finished the game!");
+                alert("Felicidades, haz ganado: " + prize + "!!!\n Total de clicks: " + total_clicks)
             }, 1200);
 
             setTimeout(function () {
