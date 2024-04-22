@@ -3,32 +3,32 @@ $(function () {
 
     var prices = {
         "1": {
-            "name": "Gorra",
-            "clicks": "5"
+            "name": "Multipuerto",
+            "clicks": "6"
         },
         "2": {
-            "name": "Libreta",
-            "clicks": "10"
+            "name": "Botilito",
+            "clicks": "8"
         },
         "3": {
-            "name": "Cartuchera",
-            "clicks": "15"
+            "name": "Tula",
+            "clicks": "10"
         },
         "4": {
-            "name": "Pelota",
-            "clicks": "20"
+            "name": "Gorra",
+            "clicks": "13"
         },
         "5": {
-            "name": "Esfero",
-            "clicks": "25"
+            "name": "Libreta",
+            "clicks": "15"
         },
         "6": {
-            "name": "Resaltador",
-            "clicks": "60"
+            "name": "Pelota",
+            "clicks": "30"
         }
     };
 
-    var imgUrls = ["img/uno.png", "img/dos.png", "img/tres.png", "img/cuatro.png", "img/cinco.png", "img/seis.png", "img/siete.png", "img/ocho.png", "img/nueve.png", "img/diez.png", "img/once.png", "img/doce.png", "img/uno.png", "img/dos.png", "img/tres.png", "img/cuatro.png", "img/cinco.png", "img/seis.png", "img/siete.png", "img/ocho.png", "img/nueve.png", "img/diez.png", "img/once.png", "img/doce.png"];
+    var imgUrls = ["img/uno.png", "img/dos.png", "img/tres.png", "img/cuatro.png", "img/cinco.png", "img/seis.png", "img/siete.png", "img/ocho.png", "img/uno.png", "img/dos.png", "img/tres.png", "img/cuatro.png", "img/cinco.png", "img/seis.png", "img/siete.png", "img/ocho.png"];
 
     var imgUrlsArr = imgUrls;
     imgUrlsArr = shuffleArray(imgUrlsArr);

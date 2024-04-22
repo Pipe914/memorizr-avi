@@ -166,7 +166,7 @@ section .total_clicks {
 
 section .wrapper {
   display: block;
-  max-width: 1300px;
+  max-width: 800px;
   height: auto;
   border-radius: 30px;
   margin-left: auto;
